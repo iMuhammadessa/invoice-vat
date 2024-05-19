@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/js/bootstrap.min.js"
+    />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <title>Invoice VAT</title>
+  </head>
+  <body>
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-md-10 mx-auto col-lg-5">
+          <div class="form-floating mb-3">
+            <input
+              type="number"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Enter amount...."
+            />
+            <label for="floatingInput">Enter amount....</label>
+          </div>
+          <button
+            class="w-100 btn btn-primary text-uppercase"
+            onclick="calculate()"
+          >
+            Calculate
+          </button>
+          <div id="showAmount" class="mt-3"></div>
+        </div>
+      </div>
+    </div>
+    <script src="/src/js/main.js"></script>
+  </body>
+</html>
