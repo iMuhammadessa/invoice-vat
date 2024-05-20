@@ -39,11 +39,16 @@
         </div>
       </div>
     </div>
-    <script src="/js/main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      let input = document.getElementById("floatingInput");
+      let showAmount = document.getElementById("showAmount");
+
+      function calculate() {
+        let amount = input.value;
+        let total = amount * 0.05;
+        console.log(total);
+        showAmount.innerHTML = "Value added tax (5%) = " + total.toFixed(2);
+      }
+    </script>
   </body>
 </html>
